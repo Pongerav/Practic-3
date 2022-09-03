@@ -4,6 +4,12 @@ int x = A;
 int sum = 0;
 int digit = 0;
 
+if (x < 0) 
+{
+    x = x * (-1);
+    A = A * (-1);
+}
+
 while (x > 0) 
 {
     digit = x % 10;
@@ -11,4 +17,4 @@ while (x > 0)
     x = x / 10;
 }
 
-Console.WriteLine($"Сумма цифр в числе равна {sum}");
+Console.WriteLine($"Сумма цифр в числе {A} равна {sum}");
